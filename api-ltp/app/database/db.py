@@ -33,8 +33,8 @@ def init_db():
         titulo TEXT NOT NULL, 
         descricao TEXT NOT NULL,
         dificuldade TEXT NOT NULL,
-        user_id INTEGER NOT NULL,
-        FOREIGN KEY (user_id) REFERENCES user(id)
+        player_id INTEGER NOT NULL,
+        FOREIGN KEY (player) REFERENCES player(id)
     )
     """
     )
